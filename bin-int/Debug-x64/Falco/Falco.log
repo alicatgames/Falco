@@ -1,0 +1,4 @@
+﻿  Test.cpp
+C:\GameDev\Falco\Falco\src\Test.h(9,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+     Creating library C:\GameDev\Falco\\bin\Debug-x64\Falco\Falco.lib and object C:\GameDev\Falco\\bin\Debug-x64\Falco\Falco.exp
+  Falco.vcxproj -> C:\GameDev\Falco\bin\Debug-x64\Falco\Falco.dll
