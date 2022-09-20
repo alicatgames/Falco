@@ -1,3 +1,2 @@
-﻿  Application.cpp
-C:\GameDev\Falco\Sandbox\src\Application.cpp(9,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+﻿  SandboxApp.cpp
   Sandbox.vcxproj -> C:\GameDev\Falco\bin\Debug-x64\Sandbox\Sandbox.exe
