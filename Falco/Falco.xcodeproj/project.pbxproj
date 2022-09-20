@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4219ACFA9D5B006C70B54B3A /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A5DF9C2717094F4618C9002 /* Log.cpp */; };
+		B470CE5E7AFEC5D0E900EC9E /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6309AAE6F8806A18671CC126 /* Application.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		090745D0566A3C02CC893C10 /* Application.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Application.h; path = src/Falco/Application.h; sourceTree = "<group>"; };
+		2D69291ED1BBC6D0E3F40F5E /* Falco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Falco.h; path = src/Falco.h; sourceTree = "<group>"; };
+		40D90D2C4449DF5EC5B6836C /* Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Log.h; path = src/Falco/Log.h; sourceTree = "<group>"; };
+		5A5DF9C2717094F4618C9002 /* Log.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Log.cpp; path = src/Falco/Log.cpp; sourceTree = "<group>"; };
+		6309AAE6F8806A18671CC126 /* Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Application.cpp; path = src/Falco/Application.cpp; sourceTree = "<group>"; };
+		BBBBAF7A5EA9D62CEDCFB5BA /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Core.h; path = src/Falco/Core.h; sourceTree = "<group>"; };
+		DE0BC858E17C9A8A62E93E98 /* Falco.dll */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = Falco.dll; path = Falco.dll; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECCF8F20B03B50D2EEDEF560 /* EntryPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EntryPoint.h; path = src/Falco/EntryPoint.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8B751C84C02DAFA66D3A808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		899E34342DF0D1E640291A74 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXGroup section */
+		7AB99D8514D611F761115BC5 /* Falco */ = {
+			isa = PBXGroup;
+			children = (
+				F6C0EA7246D47F24C952B0B2 /* Falco */,
+				2D69291ED1BBC6D0E3F40F5E /* Falco.h */,
+				A6C936B49B3FADE6EA134CF4 /* Products */,
+			);
+			name = Falco;
+			sourceTree = "<group>";
+		};
+		A6C936B49B3FADE6EA134CF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE0BC858E17C9A8A62E93E98 /* Falco.dll */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6C0EA7246D47F24C952B0B2 /* Falco */ = {
+			isa = PBXGroup;
+			children = (
+				6309AAE6F8806A18671CC126 /* Application.cpp */,
+				090745D0566A3C02CC893C10 /* Application.h */,
+				BBBBAF7A5EA9D62CEDCFB5BA /* Core.h */,
+				ECCF8F20B03B50D2EEDEF560 /* EntryPoint.h */,
+				5A5DF9C2717094F4618C9002 /* Log.cpp */,
+				40D90D2C4449DF5EC5B6836C /* Log.h */,
+			);
+			name = Falco;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9CFF53E1876493071B7A37E /* Falco */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96F29A273A3E2359550EF067 /* Build configuration list for PBXNativeTarget "Falco" */;
+			buildPhases = (
+				189ED268BBEA5B9AD6BB28A8 /* Resources */,
+				824BEBBF259774F1406841FF /* Sources */,
+				A8B751C84C02DAFA66D3A808 /* Frameworks */,
+				899E34342DF0D1E640291A74 /* Embed Libraries */,
+				9607AE3710C85E8F00CD1376 /* Postbuild */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Falco;
+			productName = Falco;
+			productReference = DE0BC858E17C9A8A62E93E98 /* Falco.dll */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Falco" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 7AB99D8514D611F761115BC5 /* Falco */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9CFF53E1876493071B7A37E /* Falco.dll */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		189ED268BBEA5B9AD6BB28A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9607AE3710C85E8F00CD1376 /* Postbuild */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Postbuild;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif [ \"${CONFIGURATION}\" = \"Debug\" ]; then\ncp -rf ../bin/Debug-windows-x86_64/Falco/Falco.dll ../bin/Debug-windows-x86_64/Sandbox\nfi\nif [ \"${CONFIGURATION}\" = \"Release\" ]; then\ncp -rf ../bin/Release-windows-x86_64/Falco/Falco.dll ../bin/Release-windows-x86_64/Sandbox\nfi\nif [ \"${CONFIGURATION}\" = \"Dist\" ]; then\ncp -rf ../bin/Dist-windows-x86_64/Falco/Falco.dll ../bin/Dist-windows-x86_64/Sandbox\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		824BEBBF259774F1406841FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B470CE5E7AFEC5D0E900EC9E /* Application.cpp in Sources */,
+				4219ACFA9D5B006C70B54B3A /* Log.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CE8216D6559059FA9F7D7AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../bin/Debug-windows-x86_64/Falco";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_EXTENSION = dll;
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = latest;
+				PRODUCT_NAME = Falco;
+			};
+			name = Debug;
+		};
+		3E394BA7667404594E0F91E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../bin/Release-windows-x86_64/Falco";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_EXTENSION = dll;
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = latest;
+				PRODUCT_NAME = Falco;
+			};
+			name = Release;
+		};
+		4C70AAEEEFBC34200A8D012E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++1z";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					FLC_PLATFORM_WINDOWS,
+					FLC_BUILD_DLL,
+					FLC_RELEASE,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = "../bin-int/Release-windows-x86_64/Falco";
+				ONLY_ACTIVE_ARCH = NO;
+				SYMROOT = "../bin/Release-windows-x86_64/Falco";
+				USER_HEADER_SEARCH_PATHS = (
+					vendor/spdlog/include,
+				);
+			};
+			name = Release;
+		};
+		6258E4619B13AAD32AAAE2A1 /* Dist */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++1z";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					FLC_PLATFORM_WINDOWS,
+					FLC_BUILD_DLL,
+					FLC_DIST,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = "../bin-int/Dist-windows-x86_64/Falco";
+				ONLY_ACTIVE_ARCH = NO;
+				SYMROOT = "../bin/Dist-windows-x86_64/Falco";
+				USER_HEADER_SEARCH_PATHS = (
+					vendor/spdlog/include,
+				);
+			};
+			name = Dist;
+		};
+		9AFE091A85EA2F0CCDCFF75A /* Dist */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../bin/Dist-windows-x86_64/Falco";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_EXTENSION = dll;
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = latest;
+				PRODUCT_NAME = Falco;
+			};
+			name = Dist;
+		};
+		E67513B43688A866B906D9F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++1z";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					FLC_PLATFORM_WINDOWS,
+					FLC_BUILD_DLL,
+					FLC_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = "../bin-int/Debug-windows-x86_64/Falco";
+				ONLY_ACTIVE_ARCH = YES;
+				SYMROOT = "../bin/Debug-windows-x86_64/Falco";
+				USER_HEADER_SEARCH_PATHS = (
+					vendor/spdlog/include,
+				);
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Falco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E67513B43688A866B906D9F4 /* Debug */,
+				4C70AAEEEFBC34200A8D012E /* Release */,
+				6258E4619B13AAD32AAAE2A1 /* Dist */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		96F29A273A3E2359550EF067 /* Build configuration list for PBXNativeTarget "Falco.dll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE8216D6559059FA9F7D7AD /* Debug */,
+				3E394BA7667404594E0F91E7 /* Release */,
+				9AFE091A85EA2F0CCDCFF75A /* Dist */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+};
+rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
