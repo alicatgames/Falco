@@ -1,6 +1,8 @@
 #pragma once
 
 #include "Core.h"
+#include "Events/Event.h"
+
 namespace Falco {
 
 	class FALCO_API Application

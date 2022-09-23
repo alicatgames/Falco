@@ -4,6 +4,9 @@
     <Filter Include="Falco">
       <UniqueIdentifier>{CABC280D-36D1-50BE-FF52-F41D6B264DEF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Falco\Events">
+      <UniqueIdentifier>{6EE1E43F-5A44-74E4-03CA-AC9AEF0B4067}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Falco.h" />
@@ -16,9 +19,22 @@
     <ClInclude Include="src\Falco\EntryPoint.h">
       <Filter>Falco</Filter>
     </ClInclude>
+    <ClInclude Include="src\Falco\Events\ApplicationEvent.h">
+      <Filter>Falco\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Falco\Events\Event.h">
+      <Filter>Falco\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Falco\Events\KeyEvent.h">
+      <Filter>Falco\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Falco\Events\MouseEvent.h">
+      <Filter>Falco\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Falco\Log.h">
       <Filter>Falco</Filter>
     </ClInclude>
+    <ClInclude Include="src\flcpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Falco\Application.cpp">
@@ -27,5 +43,6 @@
     <ClCompile Include="src\Falco\Log.cpp">
       <Filter>Falco</Filter>
     </ClCompile>
+    <ClCompile Include="src\flcpch.cpp" />
   </ItemGroup>
 </Project>

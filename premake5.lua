@@ -1,5 +1,5 @@
 workspace "Falco"
-	architecture "x86_64"
+	architecture "x64"
 	startproject "Sandbox"
 
 	configurations
@@ -19,6 +19,9 @@ project "Falco"
 	targetdir("bin/" .. outputdir .. "/%{prj.name}")
 	objdir("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "flcpch.h"
+	pchsource "Falco/src/flcpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",
@@ -27,7 +30,8 @@ project "Falco"
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{prj.name}/src"
 	}
 
 	filter "system:windows"
