@@ -1,0 +1,14 @@
+/Users/alijbuchan/GameDev/OpenSourceProjects/Falco/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/alijbuchan/GameDev/OpenSourceProjects/Falco/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/alijbuchan/GameDev/OpenSourceProjects/Falco/cmake-build-debug/Falco/CMakeFiles/edit_cache.dir
+/Users/alijbuchan/GameDev/OpenSourceProjects/Falco/cmake-build-debug/Falco/CMakeFiles/rebuild_cache.dir
+/Users/alijbuchan/GameDev/OpenSourceProjects/Falco/cmake-build-debug/Falco/vendor/CMakeFiles/edit_cache.dir
+/Users/alijbuchan/GameDev/OpenSourceProjects/Falco/cmake-build-debug/Falco/vendor/CMakeFiles/rebuild_cache.dir
+/Users/alijbuchan/GameDev/OpenSourceProjects/Falco/cmake-build-debug/Falco/vendor/spdlog/CMakeFiles/spdlog.dir
+/Users/alijbuchan/GameDev/OpenSourceProjects/Falco/cmake-build-debug/Falco/vendor/spdlog/CMakeFiles/edit_cache.dir
+/Users/alijbuchan/GameDev/OpenSourceProjects/Falco/cmake-build-debug/Falco/vendor/spdlog/CMakeFiles/rebuild_cache.dir
+/Users/alijbuchan/GameDev/OpenSourceProjects/Falco/cmake-build-debug/Sandbox/CMakeFiles/edit_cache.dir
+/Users/alijbuchan/GameDev/OpenSourceProjects/Falco/cmake-build-debug/Sandbox/CMakeFiles/rebuild_cache.dir
+/Users/alijbuchan/GameDev/OpenSourceProjects/Falco/cmake-build-debug/Sandbox/src/CMakeFiles/Sandbox.dir
+/Users/alijbuchan/GameDev/OpenSourceProjects/Falco/cmake-build-debug/Sandbox/src/CMakeFiles/edit_cache.dir
+/Users/alijbuchan/GameDev/OpenSourceProjects/Falco/cmake-build-debug/Sandbox/src/CMakeFiles/rebuild_cache.dir

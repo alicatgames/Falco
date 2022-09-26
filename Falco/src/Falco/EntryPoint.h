@@ -1,5 +1,5 @@
 #pragma once
-#ifdef FLC_PLATFORM_WINDOWS
+
 
 extern Falco::Application* Falco::CreateApplication();
 
@@ -16,4 +16,3 @@ int main(int argc, char** argv)
 	delete app;
 }
 
-#endif

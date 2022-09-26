@@ -1,0 +1,163 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						4
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Falco",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-Falco-Debug-6650e2b1b6dafeec0d26.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Falco"
+				},
+				{
+					"build" : "Falco/vendor",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-Falco.vendor-Debug-4a4a3a91afa71cf0a0f1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "Falco/vendor"
+				},
+				{
+					"build" : "Falco/vendor/spdlog",
+					"jsonFile" : "directory-Falco.vendor.spdlog-Debug-ef3e00a9651221f15209.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "Falco/vendor/spdlog",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "Sandbox",
+					"childIndexes" : 
+					[
+						5
+					],
+					"jsonFile" : "directory-Sandbox-Debug-f6a09c83ff2cdb7d8b70.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Sandbox"
+				},
+				{
+					"build" : "Sandbox/src",
+					"jsonFile" : "directory-Sandbox.src-Debug-4eee1d8110bb02ea4233.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "Sandbox/src",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						4,
+						5
+					],
+					"name" : "Falco",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "spdlog",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 5,
+					"id" : "Sandbox::@fb0ec3b4a9b6261bc287",
+					"jsonFile" : "target-Sandbox-Debug-b2fec7d897ab2735c711.json",
+					"name" : "Sandbox",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "spdlog::@6d253825cfdd9abe45ea",
+					"jsonFile" : "target-spdlog-Debug-8b92010f5a92245d274f.json",
+					"name" : "spdlog",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/alijbuchan/GameDev/OpenSourceProjects/Falco/cmake-build-debug",
+		"source" : "/Users/alijbuchan/GameDev/OpenSourceProjects/Falco"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
