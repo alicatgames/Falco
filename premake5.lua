@@ -66,14 +66,17 @@ project "Falco"
 
 	filter "configurations:Debug"
 		defines "FLC_DEBUG"
+		buildoptions "/MDd"
 		symbols "on"
 
 	filter "configurations:Release"
 		defines "FLC_RELEASE"
+		buildoptions "/MD"
 		optimize "on"
 
 	filter "configurations:Dist"
 		defines "FLC_DIST"
+		buildoptions "/MD"
 		optimize "on"
 
 
@@ -116,12 +119,15 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "FLC_DEBUG"
+		buildoptions "/MDd"
 		symbols "on"
 
 	filter "configurations:Release"
 		defines "FLC_RELEASE"
+		buildoptions "/MD"
 		optimize "on"
 
 	filter "configurations:Dist"
 		defines "FLC_DIST"
+		buildoptions "/MD"
 		optimize "on"
