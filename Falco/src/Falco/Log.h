@@ -26,13 +26,13 @@ namespace Falco {
 #define FLC_CORE_INFO(...) ::Falco::Log::GetCoreLogger()->info(__VA_ARGS__)
 #define FLC_CORE_WARN(...) ::Falco::Log::GetCoreLogger()->warn(__VA_ARGS__)
 #define FLC_CORE_ERROR(...) ::Falco::Log::GetCoreLogger()->error(__VA_ARGS__)
-#define FLC_CORE_FATAL(...) ::Falco::Log::GetCoreLogger()->fatal(__VA_ARGS__)
+#define FLC_CORE_FATAL(...) ::Falco::Log::GetCoreLogger()->critical(__VA_ARGS__)
 
 // Client log macros Strip out for distribution builds
 #define FLC_TRACE(...) ::Falco::Log::GetClientLogger()->trace(__VA_ARGS__)
 #define FLC_INFO(...) ::Falco::Log::GetClientLogger()->info(__VA_ARGS__)
 #define FLC_WARN(...) ::Falco::Log::GetClientLogger()->warn(__VA_ARGS__)
 #define FLC_ERROR(...) ::Falco::Log::GetClientLogger()->error(__VA_ARGS__)
-#define FLC_FATAL(...) ::Falco::Log::GetClientLogger()->fatal(__VA_ARGS__)
+#define FLC_FATAL(...) ::Falco::Log::GetClientLogger()->critical(__VA_ARGS__)
 
 

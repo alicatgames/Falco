@@ -1,11 +1,15 @@
 #pragma once
 
 #ifdef FLC_PLATFORM_WINDOWS
+#if FLC_DYNAMIC_LINK
 	#ifdef FLC_BUILD_DLL
 		#define FALCO_API __declspec(dllexport)
 	#else
 		#define FALCO_API __declspec(dllimport)
 	#endif
+#else
+	#define FALCO_API
+#endif
 #else
 	#error Falco only supports windows!
 #endif

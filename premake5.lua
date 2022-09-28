@@ -13,14 +13,16 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 --Struct/table of include directories relative to root
 IncludeDir = {}
-IncludeDir["GLFW"] = "Falco/vendor/glfw/include"
+IncludeDir["GLFW"] = "Falco/vendor/GLFW/include"
 
-include "Falco/vendor/glfw"
+include "Falco/vendor/GLFW"
 
 project "Falco"
 	location "Falco"
-	kind "SharedLib"
+	kind "StaticLib"
 	language "C++"
+	cppdialect "C++17"
+	staticruntime "on"
 
 	targetdir("bin/" .. outputdir .. "/%{prj.name}")
 	objdir("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -32,6 +34,11 @@ project "Falco"
 	{
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp"
+	}
+
+	defines
+	{
+		"_CRT_SECURE_NO_WARNINGS"
 	}
 
 	includedirs
@@ -48,8 +55,6 @@ project "Falco"
 	}
 
 	filter "system:windows"
-		cppdialect "C++17"
-		staticruntime "On"
 		systemversion "latest"
 
 		defines
@@ -58,29 +63,26 @@ project "Falco"
 			"FLC_BUILD_DLL"
 		}
 
-		postbuildcommands
-		{
-			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
-		}
-
 
 	filter "configurations:Debug"
 		defines "FLC_DEBUG"
-		symbols "On"
+		symbols "on"
 
 	filter "configurations:Release"
 		defines "FLC_RELEASE"
-		optimize "On"
+		optimize "on"
 
 	filter "configurations:Dist"
 		defines "FLC_DIST"
-		optimize "On"
+		optimize "on"
 
 
 project "Sandbox"
 	location "Sandbox"
 	kind "ConsoleApp"
 	language "C++"
+	cppdialect "C++17"
+	staticruntime "on"
 	
 	targetdir("bin/" .. outputdir .. "/%{prj.name}")
 	objdir("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -103,7 +105,6 @@ project "Sandbox"
 	}
 
 	filter "system:windows"
-		cppdialect "C++17"
 		staticruntime "On"
 		systemversion "latest"
 
@@ -112,24 +113,15 @@ project "Sandbox"
 			"FLC_PLATFORM_WINDOWS",
 		}
 
-	filter "system:macosx"
-		cppdialect "C++17"
-		staticruntime "On"
-		systemversion "latest"
-
-		defines
-		{
-			"FLC_PLATFORM_MACOS"
-		}
 
 	filter "configurations:Debug"
 		defines "FLC_DEBUG"
-		symbols "On"
+		symbols "on"
 
 	filter "configurations:Release"
 		defines "FLC_RELEASE"
-		optimize "On"
+		optimize "on"
 
 	filter "configurations:Dist"
 		defines "FLC_DIST"
-		optimize "On"
+		optimize "on"
