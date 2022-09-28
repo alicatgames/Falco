@@ -7,7 +7,7 @@
 
 namespace Falco {
 
-	class Log
+	class FALCO_API Log
 	{
 	public:
 		static void Init();

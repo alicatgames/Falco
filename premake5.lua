@@ -11,8 +11,6 @@ workspace "Falco"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
-require "cmake"
-
 project "Falco"
 	location "Falco"
 	kind "SharedLib"

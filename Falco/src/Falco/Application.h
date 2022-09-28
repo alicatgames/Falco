@@ -5,7 +5,7 @@
 
 namespace Falco {
 
-	class Application
+	class FALCO_API Application
 	{
 
 	public:

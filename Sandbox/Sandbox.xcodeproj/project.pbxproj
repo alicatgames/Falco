@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08B624E5E758C0579C3AC325 /* Falco.lib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3875CDABDB58FFE6300C0D /* Falco.lib */; };
+		5569FCC299B8A234DBDFDB02 /* SandboxApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB5332CA0D1EDFFC49D4090A /* SandboxApp.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4930BCC0341CE2B27C02AB00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56949DE9E92267DB51FB0C29 /* ../Falco/Falco.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E9CFF53E1876493071B7A37E;
+			remoteInfo = Falco.dll;
+		};
+		F6F64A27E1E2701929C83867 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56949DE9E92267DB51FB0C29 /* ../Falco/Falco.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DE0BC858E17C9A8A62E93E98;
+			remoteInfo = Falco.dll;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		56949DE9E92267DB51FB0C29 /* Falco.lib */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Falco.xcodeproj"; path = ../Falco/Falco.xcodeproj; sourceTree = SOURCE_ROOT; };
+		94AD9308379BB9BAC6C19948 /* Sandbox.exe */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = Sandbox.exe; path = Sandbox.exe; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB5332CA0D1EDFFC49D4090A /* SandboxApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SandboxApp.cpp; path = src/SandboxApp.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC3F44787091E22A82CA2AB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08B624E5E758C0579C3AC325 /* Falco.lib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AEED92E4B25E651633CB0924 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXGroup section */
+		6849586FFB54B1614389A6AF /* Sandbox */ = {
+			isa = PBXGroup;
+			children = (
+				EB5332CA0D1EDFFC49D4090A /* SandboxApp.cpp */,
+				A6C936B49B3FADE6EA134CF4 /* Products */,
+				9D968EAA920D05DCE0E0A4EA /* Projects */,
+			);
+			name = Sandbox;
+			sourceTree = "<group>";
+		};
+		9D968EAA920D05DCE0E0A4EA /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				56949DE9E92267DB51FB0C29 /* Falco.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		A6C936B49B3FADE6EA134CF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94AD9308379BB9BAC6C19948 /* Sandbox.exe */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD41AE872367DE398A6ED4C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC3875CDABDB58FFE6300C0D /* Falco.lib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B90B29EE2A964260D997682E /* Sandbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA7A8CD75ECD2A8971057317 /* Build configuration list for PBXNativeTarget "Sandbox" */;
+			buildPhases = (
+				3C26C518E07962CAF2B1AB58 /* Resources */,
+				A5D3DE6F4A267C215C5EC4AF /* Sources */,
+				CC3F44787091E22A82CA2AB8 /* Frameworks */,
+				AEED92E4B25E651633CB0924 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAF9EB9011201B42782711D0 /* PBXTargetDependency */,
+			);
+			name = Sandbox;
+			productInstallPath = "$(HOME)/bin";
+			productName = Sandbox;
+			productReference = 94AD9308379BB9BAC6C19948 /* Sandbox.exe */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Sandbox" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 6849586FFB54B1614389A6AF /* Sandbox */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FD41AE872367DE398A6ED4C7 /* Products */;
+					ProjectRef = 56949DE9E92267DB51FB0C29 /* Falco.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B90B29EE2A964260D997682E /* Sandbox.exe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AC3875CDABDB58FFE6300C0D /* Falco.lib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = Falco.lib;
+			remoteRef = F6F64A27E1E2701929C83867 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C26C518E07962CAF2B1AB58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5D3DE6F4A267C215C5EC4AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5569FCC299B8A234DBDFDB02 /* SandboxApp.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAF9EB9011201B42782711D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Falco.lib;
+			targetProxy = 4930BCC0341CE2B27C02AB00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B419C1D537C54CF3B17E25D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../bin/Debug-windows-x86_64/Sandbox";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = latest;
+				PRODUCT_NAME = Sandbox.exe;
+			};
+			name = Debug;
+		};
+		48DC32576AA7DF89A75D0897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../bin/Release-windows-x86_64/Sandbox";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = latest;
+				PRODUCT_NAME = Sandbox.exe;
+			};
+			name = Release;
+		};
+		52C1E94BA548143D778C778B /* Dist */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++1z";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					FLC_PLATFORM_WINDOWS,
+					FLC_DIST,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = "../bin-int/Dist-windows-x86_64/Sandbox";
+				ONLY_ACTIVE_ARCH = NO;
+				SYMROOT = "../bin/Dist-windows-x86_64/Sandbox";
+				USER_HEADER_SEARCH_PATHS = (
+					../Falco/vendor/spdlog/include,
+					../Falco/src,
+				);
+			};
+			name = Dist;
+		};
+		D1BAEDCA2848583C00C16C0A /* Dist */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../bin/Dist-windows-x86_64/Sandbox";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = latest;
+				PRODUCT_NAME = Sandbox.exe;
+			};
+			name = Dist;
+		};
+		D2EB7F98773E1D4A897665D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++1z";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					FLC_PLATFORM_WINDOWS,
+					FLC_RELEASE,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = "../bin-int/Release-windows-x86_64/Sandbox";
+				ONLY_ACTIVE_ARCH = NO;
+				SYMROOT = "../bin/Release-windows-x86_64/Sandbox";
+				USER_HEADER_SEARCH_PATHS = (
+					../Falco/vendor/spdlog/include,
+					../Falco/src,
+				);
+			};
+			name = Release;
+		};
+		E3FEB5DE874A3F10A21B0C1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++1z";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					FLC_PLATFORM_WINDOWS,
+					FLC_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = "../bin-int/Debug-windows-x86_64/Sandbox";
+				ONLY_ACTIVE_ARCH = YES;
+				SYMROOT = "../bin/Debug-windows-x86_64/Sandbox";
+				USER_HEADER_SEARCH_PATHS = (
+					../Falco/vendor/spdlog/include,
+					../Falco/src,
+				);
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Sandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3FEB5DE874A3F10A21B0C1E /* Debug */,
+				D2EB7F98773E1D4A897665D8 /* Release */,
+				52C1E94BA548143D778C778B /* Dist */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BA7A8CD75ECD2A8971057317 /* Build configuration list for PBXNativeTarget "Sandbox.exe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B419C1D537C54CF3B17E25D /* Debug */,
+				48DC32576AA7DF89A75D0897 /* Release */,
+				D1BAEDCA2848583C00C16C0A /* Dist */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+};
+rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

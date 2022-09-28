@@ -4,7 +4,7 @@
 
 namespace Falco {
 
-	class WindowResizeEvent : public Event
+	class FALCO_API WindowResizeEvent : public Event
 	{
 	public:
 		WindowResizeEvent(unsigned int width, unsigned int height) : m_Width(width), m_Height(height) {}
@@ -26,7 +26,7 @@ namespace Falco {
 		unsigned int m_Width, m_Height;
 	};
 
-	class WindowCloseEvent : public Event
+	class FALCO_API WindowCloseEvent : public Event
 	{
 	public:
 		WindowCloseEvent() {}
@@ -34,7 +34,7 @@ namespace Falco {
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 
-	class AppTickEvent : public Event
+	class FALCO_API AppTickEvent : public Event
 	{
 		AppTickEvent() {}
 
@@ -42,14 +42,14 @@ namespace Falco {
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 
-	class AppUpdateEvent : public Event
+	class FALCO_API AppUpdateEvent : public Event
 	{
 
 		EVENT_CLASS_TYPE(AppUpdate)
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 
-	class AppRenderEvent : public Event
+	class FALCO_API AppRenderEvent : public Event
 	{
 	public:
 		AppRenderEvent() {}

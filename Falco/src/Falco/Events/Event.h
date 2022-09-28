@@ -4,7 +4,8 @@
 #include "Falco/Core.h"
 
 namespace Falco {
-
+	// Events in falco are currently blocking, meaning when an event occurs it immediately.
+	// For the future, may be better to vuffer events in an event bus and process them during the "event" part of the update stage. 
 	enum class EventType 
 	{
 		None = 0,
@@ -14,7 +15,8 @@ namespace Falco {
 		MouseButtonPressed, MouseButtonReleased, MouseMoved, MouseScrolled
 	};
 
-	enum EventCategory
+	// to help filter events if needed
+	enum EventCategory 
 	{
 		None = 0,
 		EventCategoryApplication = BIT(0),
@@ -24,14 +26,14 @@ namespace Falco {
 		EventCategoryMouseButton = BIT(4)
 	};
 
-
+	// nice macros to help reduce code on the specific events
 #define EVENT_CLASS_TYPE(type) static EventType GetStaticType() { return EventType::##type; }\
 							virtual EventType GetEventType() const override { return GetStaticType(); }\
 							virtual const char* GetName() const override { return #type; }
 
 #define EVENT_CLASS_CATEGORY(category) virtual int GetCategoryFlags() const override { return category; }
 
-	class Event
+	class FALCO_API Event
 	{
 		friend class EventDispatcher;
 	public:
@@ -60,7 +62,7 @@ namespace Falco {
 		template<typename T>
 		bool Dispatch(EventFn<T> func)
 		{
-			if (m_Event.GetEventType() == T::GetStaticType())
+			if (m.Event.GetEventType() == T::GetStaticType())
 			{
 				m_Event.m_Handled = func(*(T*)&m_Event);
 				return true;
