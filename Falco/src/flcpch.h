@@ -12,6 +12,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Falco/Log.h"
+
 #ifdef FLC_PLATFORM_WINDOWS
 	#include <Windows.h>
 #endif

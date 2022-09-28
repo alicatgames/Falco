@@ -10,6 +10,14 @@
 	#error Falco only supports windows!
 #endif
 
+#ifdef FLC_ENABLE_ASSERTS
+	#define FLC_ASSERT(x, ...) { if(!(x)) { FLC_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+	#define FLC_CORE_ASSERT(x, ...) { if(!(x)) { FLC_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+#else
+	#define FLC_ASSERT(x, ...) 
+	#define FLC_CORE_ASSERT(x, ...)
+#endif
+
 #define BIT(x) (1 << x)
 
 

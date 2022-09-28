@@ -11,6 +11,12 @@ workspace "Falco"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+--Struct/table of include directories relative to root
+IncludeDir = {}
+IncludeDir["GLFW"] = "Falco/vendor/glfw/include"
+
+include "Falco/vendor/glfw"
+
 project "Falco"
 	location "Falco"
 	kind "SharedLib"
@@ -31,7 +37,14 @@ project "Falco"
 	includedirs
 	{
 		"%{prj.name}/vendor/spdlog/include",
-		"%{prj.name}/src"
+		"%{prj.name}/src",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
@@ -50,21 +63,6 @@ project "Falco"
 			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
 		}
 
-	filter "system:macosx"
-		cppdialect "C++17"
-		staticruntime "On"
-		systemversion "latest"
-
-		defines
-		{
-			"FLC_PLATFORM_MACOSX",
-			"FLC_BUILD_DLL"
-		}
-
-		postbuildcommands
-		{
-			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
-		}
 
 	filter "configurations:Debug"
 		defines "FLC_DEBUG"
