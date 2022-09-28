@@ -4,7 +4,7 @@
 
 namespace Falco 
 {
-	class FALCO_API KeyEvent : public Event
+	class KeyEvent : public Event
 	{
 	public:
 		inline int GetKeyCode() const { return m_KeyCode; }
@@ -16,7 +16,7 @@ namespace Falco
 		int m_KeyCode;
 	};
 
-	class FALCO_API KeyPressedEvent : public KeyEvent
+	class KeyPressedEvent : public KeyEvent
 	{
 	public:
 		KeyPressedEvent(int keycode, int repeatCount) : KeyEvent(keycode), m_RepeatCount(repeatCount) {}
@@ -35,18 +35,18 @@ namespace Falco
 		int m_RepeatCount;
 	};
 
-	class FALCO_API KeyReleasedEvent : public KeyEvent
+	class KeyReleasedEvent : public KeyEvent
 	{
 	public: 
 		KeyReleasedEvent(int keycode) : KeyEvent(keycode) {}
 
-	std::string ToString() const override
-	{
-		std::stringstream ss;
-		ss << "KeyReleasedEvent: " << m_KeyCode;
-		return ss.str();
-	}
+	    std::string ToString() const override
+	    {
+		    std::stringstream ss;
+		    ss << "KeyReleasedEvent: " << m_KeyCode;
+		    return ss.str();
+	    }
 
-		EVENT_CLASS_TYPE(KeyReleased)
+	EVENT_CLASS_TYPE(KeyReleased)
 	};
 }
