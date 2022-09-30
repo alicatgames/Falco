@@ -47,6 +47,8 @@
       <Filter>Falco</Filter>
     </ClInclude>
     <ClInclude Include="src\flcpch.h" />
+    <ClInclude Include="src\Falco\Layer.h" />
+    <ClInclude Include="src\Falco\LayerStack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Falco\Application.cpp">
@@ -59,5 +61,7 @@
       <Filter>Falco\Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\flcpch.cpp" />
+    <ClCompile Include="src\Falco\Layer.cpp" />
+    <ClCompile Include="src\Falco\LayerStack.cpp" />
   </ItemGroup>
 </Project>
