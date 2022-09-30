@@ -14,8 +14,11 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 --Struct/table of include directories relative to root
 IncludeDir = {}
 IncludeDir["GLFW"] = "Falco/vendor/GLFW/include"
+IncludeDir["glad"] = "Falco/vendor/glad/include"
+
 
 include "Falco/vendor/GLFW"
+include "Falco/vendor/glad"
 
 project "Falco"
 	location "Falco"
@@ -45,12 +48,15 @@ project "Falco"
 	{
 		"%{prj.name}/vendor/spdlog/include",
 		"%{prj.name}/src",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.glad}"
+
 	}
 
 	links
 	{
 		"GLFW",
+		"glad",
 		"opengl32.lib"
 	}
 
@@ -60,7 +66,8 @@ project "Falco"
 		defines
 		{
 			"FLC_PLATFORM_WINDOWS",
-			"FLC_BUILD_DLL"
+			"FLC_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 

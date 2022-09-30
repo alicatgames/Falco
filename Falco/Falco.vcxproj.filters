@@ -37,6 +37,12 @@
     <ClInclude Include="src\Falco\Events\MouseEvent.h">
       <Filter>Falco\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Falco\Layer.h">
+      <Filter>Falco</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Falco\LayerStack.h">
+      <Filter>Falco</Filter>
+    </ClInclude>
     <ClInclude Include="src\Falco\Log.h">
       <Filter>Falco</Filter>
     </ClInclude>
@@ -47,11 +53,15 @@
       <Filter>Falco</Filter>
     </ClInclude>
     <ClInclude Include="src\flcpch.h" />
-    <ClInclude Include="src\Falco\Layer.h" />
-    <ClInclude Include="src\Falco\LayerStack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Falco\Application.cpp">
+      <Filter>Falco</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Falco\Layer.cpp">
+      <Filter>Falco</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Falco\LayerStack.cpp">
       <Filter>Falco</Filter>
     </ClCompile>
     <ClCompile Include="src\Falco\Log.cpp">
@@ -61,7 +71,5 @@
       <Filter>Falco\Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\flcpch.cpp" />
-    <ClCompile Include="src\Falco\Layer.cpp" />
-    <ClCompile Include="src\Falco\LayerStack.cpp" />
   </ItemGroup>
 </Project>
