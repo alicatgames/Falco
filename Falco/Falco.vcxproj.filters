@@ -7,8 +7,14 @@
     <Filter Include="Falco\Events">
       <UniqueIdentifier>{6EE1E43F-5A44-74E4-03CA-AC9AEF0B4067}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Falco\ImGui">
+      <UniqueIdentifier>{74214240-E0D6-BA35-69CB-B40CD57FB139}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Falco\Platform">
       <UniqueIdentifier>{5EFCC0E8-4ACA-B4EE-335E-25151FCB9053}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Falco\Platform\OpenGL">
+      <UniqueIdentifier>{D24FD600-3EBC-91FB-07B0-295973DBB363}</UniqueIdentifier>
     </Filter>
     <Filter Include="Falco\Platform\Windows">
       <UniqueIdentifier>{9824BC73-841E-E5C5-6D8B-7BD659244B32}</UniqueIdentifier>
@@ -37,6 +43,9 @@
     <ClInclude Include="src\Falco\Events\MouseEvent.h">
       <Filter>Falco\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Falco\ImGui\ImGuiLayer.h">
+      <Filter>Falco\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Falco\Layer.h">
       <Filter>Falco</Filter>
     </ClInclude>
@@ -45,6 +54,9 @@
     </ClInclude>
     <ClInclude Include="src\Falco\Log.h">
       <Filter>Falco</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Falco\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Falco\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Falco\Platform\Windows\WindowsWindow.h">
       <Filter>Falco\Platform\Windows</Filter>
@@ -58,6 +70,9 @@
     <ClCompile Include="src\Falco\Application.cpp">
       <Filter>Falco</Filter>
     </ClCompile>
+    <ClCompile Include="src\Falco\ImGui\ImGuiLayer.cpp">
+      <Filter>Falco\ImGui</Filter>
+    </ClCompile>
     <ClCompile Include="src\Falco\Layer.cpp">
       <Filter>Falco</Filter>
     </ClCompile>
@@ -66,6 +81,9 @@
     </ClCompile>
     <ClCompile Include="src\Falco\Log.cpp">
       <Filter>Falco</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Falco\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Falco\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\Falco\Platform\Windows\WindowsWindow.cpp">
       <Filter>Falco\Platform\Windows</Filter>

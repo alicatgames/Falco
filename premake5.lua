@@ -52,7 +52,7 @@ project "Falco"
 		"%{prj.name}/src",
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.glad}",
-		"%{IncludeDir.ImGui"
+		"%{IncludeDir.ImGui}"
 	}
 
 	links
