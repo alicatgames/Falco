@@ -5,3 +5,6 @@
 	path = Falco/vendor/GLFW
 	url = https://github.com/alicatgames/glfw.git
 
+[submodule "Falco/vendor/imgui"]
+	path = Falco/vendor/imgui
+	url = https://github.com/alicatgames/imgui
