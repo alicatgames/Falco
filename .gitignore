@@ -1,7 +1,15 @@
-# Directories
-.vs/
-bin/
+# Binaries
+**/bin/
 bin-int/
+Intermediates/
 
-# Files
-*.user
+# Pesky Visual Studio files and folder
+.vs/
+**.sln
+**.vcxproj
+**.vcxproj.filters
+**.vcxproj.user
+**.csproj
+
+# Falco files
+*.log
