@@ -17,10 +17,12 @@ IncludeDir["GLFW"] = "Falco/vendor/GLFW/include"
 IncludeDir["glad"] = "Falco/vendor/glad/include"
 IncludeDir["ImGui"] = "Falco/vendor/imgui"
 
+group "Dependencies"
+	include "Falco/vendor/GLFW"
+	include "Falco/vendor/glad"
+	include "Falco/vendor/imgui"
 
-include "Falco/vendor/GLFW"
-include "Falco/vendor/glad"
-include "Falco/vendor/imgui"
+group ""
 
 project "Falco"
 	location "Falco"
@@ -118,7 +120,7 @@ project "Sandbox"
 	}
 
 	filter "system:windows"
-		staticruntime "On"
+		staticruntime "on"
 		systemversion "latest"
 
 		defines
