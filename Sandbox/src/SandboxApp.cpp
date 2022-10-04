@@ -11,12 +11,19 @@ public:
 
 	void OnUpdate() override
 	{
-		FLC_INFO("ExampleLayer::Update");
+		if (Falco::Input::IsKeyPressed(FLC_KEY_TAB))
+			FLC_TRACE("Tab key is down mofo!");
 	}
 
 	void OnEvent(Falco::Event& event) override
 	{
-		FLC_TRACE("{0}", event);
+		if (event.GetEventType() == Falco::EventType::KeyPressed)
+		{
+			Falco::KeyPressedEvent& e = static_cast<Falco::KeyPressedEvent&>(event);
+			if (e.GetKeyCode() == FLC_KEY_TAB)
+				FLC_TRACE("Tab key is pressed (event)!");
+			FLC_TRACE("{0}", (char)e.GetKeyCode());
+		}
 	}
 };
 

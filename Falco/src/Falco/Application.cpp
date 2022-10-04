@@ -1,6 +1,7 @@
 #include "flcpch.h"
 #include "Application.h"
 #include "Falco/Log.h"
+#include "Input.h"
 
 #include <glad/glad.h>
 
