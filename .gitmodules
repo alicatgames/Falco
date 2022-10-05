@@ -8,3 +8,6 @@
 [submodule "Falco/vendor/imgui"]
 	path = Falco/vendor/imgui
 	url = https://github.com/alicatgames/imgui
+[submodule "Falco/vendor/glm"]
+	path = Falco/vendor/glm
+	url = https://github.com/g-truc/glm

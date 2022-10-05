@@ -16,6 +16,7 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "Falco/vendor/GLFW/include"
 IncludeDir["glad"] = "Falco/vendor/glad/include"
 IncludeDir["ImGui"] = "Falco/vendor/imgui"
+IncludeDir["glm"] = "Falco/vendor/glm"
 
 group "Dependencies"
 	include "Falco/vendor/GLFW"
@@ -40,7 +41,10 @@ project "Falco"
 	files
 	{
 		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
+		"%{prj.name}/src/**.cpp",
+		"%{prj.name}/vendor/glm/glm/**.hpp",
+		"%{prj.name}/vendor/glm/glm/**.inl",
+
 	}
 
 	defines
@@ -54,7 +58,8 @@ project "Falco"
 		"%{prj.name}/src",
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.glad}",
-		"%{IncludeDir.ImGui}"
+		"%{IncludeDir.ImGui}",
+		"%{IncludeDir.glm}"
 	}
 
 	links
@@ -114,7 +119,9 @@ project "Sandbox"
 	includedirs
 	{
 		"Falco/vendor/spdlog/include",
-		"Falco/src"
+		"Falco/src",
+		"Falco/vendor",
+		"%{IncludeDir.glm}"
 	}
 
 	links
