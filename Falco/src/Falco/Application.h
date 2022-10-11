@@ -1,10 +1,12 @@
 #pragma once
 
 #include "Core.h"
+#include "Window.h"
+
 #include "Falco/LayerStack.h"
 #include "Falco/Events/Event.h"
 #include "Falco/Events/ApplicationEvent.h"
-#include "Window.h"
+#include "Falco/ImGui/ImGuiLayer.h"
 
 namespace Falco {
 
@@ -32,6 +34,7 @@ namespace Falco {
 		bool OnWindowClose(WindowCloseEvent& e);
 
 		std::unique_ptr<Window> m_Window;
+		ImGuiLayer* m_ImGuiLayer;
 		
 		bool m_Running = true;
 		

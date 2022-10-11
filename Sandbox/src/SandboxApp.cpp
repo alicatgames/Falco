@@ -1,4 +1,5 @@
 #include <Falco.h>
+#include "imgui/imgui.h"
 
 
 class ExampleLayer : public Falco::Layer
@@ -13,6 +14,13 @@ public:
 	{
 		if (Falco::Input::IsKeyPressed(FLC_KEY_TAB))
 			FLC_TRACE("Tab key is down mofo!");
+	}
+
+	virtual void OnImGuiRender() override
+	{
+		ImGui::Begin("Test");
+		ImGui::Text("Rock Me Amadeus!");
+		ImGui::End();
 	}
 
 	void OnEvent(Falco::Event& event) override
@@ -33,7 +41,6 @@ public:
 	Sandbox() 
 	{
 		PushLayer(new ExampleLayer());
-		PushOverlay(new Falco::ImGuiLayer());
 	}
 
 	~Sandbox() 
