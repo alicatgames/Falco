@@ -87,10 +87,10 @@
     <ClInclude Include="src\Falco\MouseButtonCodes.h">
       <Filter>src\Falco</Filter>
     </ClInclude>
-    <ClInclude Include="src\Falco\Platform\Windows\WindowsInput.h">
+    <ClInclude Include="src\Platform\Windows\WindowsInput.h">
       <Filter>src\Falco\Platform\Windows</Filter>
     </ClInclude>
-    <ClInclude Include="src\Falco\Platform\Windows\WindowsWindow.h">
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>src\Falco\Platform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="src\Falco\Window.h">
@@ -1344,6 +1344,8 @@
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp">
       <Filter>vendor\glm\glm</Filter>
     </ClInclude>
+    <ClInclude Include="src\Falco\Renderer\GraphicsContext.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Falco\Application.cpp">
@@ -1364,14 +1366,15 @@
     <ClCompile Include="src\Falco\Log.cpp">
       <Filter>src\Falco</Filter>
     </ClCompile>
-    <ClCompile Include="src\Falco\Platform\Windows\WindowsInput.cpp">
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp">
       <Filter>src\Falco\Platform\Windows</Filter>
     </ClCompile>
-    <ClCompile Include="src\Falco\Platform\Windows\WindowsWindow.cpp">
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>src\Falco\Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\flcpch.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
   </ItemGroup>
 </Project>
