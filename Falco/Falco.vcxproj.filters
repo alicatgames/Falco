@@ -16,9 +16,6 @@
     <Filter Include="src\Falco\Platform">
       <UniqueIdentifier>{951CA546-8100-669C-EA60-60EFD663501E}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\Falco\Platform\OpenGL">
-      <UniqueIdentifier>{292CFB52-95EE-2EDD-DE9E-BD694AA007BB}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\Falco\Platform\Windows">
       <UniqueIdentifier>{CF8B7C0A-BB9B-28DB-2455-8DF910841774}</UniqueIdentifier>
     </Filter>
@@ -1352,6 +1349,9 @@
     <ClCompile Include="src\Falco\Application.cpp">
       <Filter>src\Falco</Filter>
     </ClCompile>
+    <ClCompile Include="src\Falco\ImGui\ImGuiBuild.cpp">
+      <Filter>src\Falco\ImGui</Filter>
+    </ClCompile>
     <ClCompile Include="src\Falco\ImGui\ImGuiLayer.cpp">
       <Filter>src\Falco\ImGui</Filter>
     </ClCompile>
@@ -1373,6 +1373,5 @@
     <ClCompile Include="src\flcpch.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\Falco\ImGui\ImGuiBuild.cpp" />
   </ItemGroup>
 </Project>

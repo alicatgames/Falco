@@ -83,19 +83,16 @@ project "Falco"
 
 	filter "configurations:Debug"
 		defines "FLC_DEBUG"
-		buildoptions "/MDd"
 		runtime "Debug"
 		symbols "on"
 
 	filter "configurations:Release"
 		defines "FLC_RELEASE"
-		buildoptions "/MD"
 		runtime "Release"
 		optimize "on"
 
 	filter "configurations:Dist"
 		defines "FLC_DIST"
-		buildoptions "/MD"
 		runtime "Release"
 		optimize "on"
 
@@ -130,7 +127,6 @@ project "Sandbox"
 	}
 
 	filter "system:windows"
-		staticruntime "on"
 		systemversion "latest"
 
 		defines
@@ -141,18 +137,15 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "FLC_DEBUG"
-		buildoptions "/MDd"
 		runtime "Debug"
 		symbols "on"
 
 	filter "configurations:Release"
 		defines "FLC_RELEASE"
-		buildoptions "/MD"
 		runtime "Release"
 		optimize "on"
 
 	filter "configurations:Dist"
 		defines "FLC_DIST"
-		buildoptions "/MD"
 		runtime "Release"
 		optimize "on"
