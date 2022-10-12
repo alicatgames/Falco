@@ -16,7 +16,12 @@ namespace Falco {
 	{
 		glfwMakeContextCurrent(m_WindowHandle);
 		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
-		FLC_CORE_ASSERT(status, "!Failed to initialise glad!")
+		FLC_CORE_ASSERT(status, "!Failed to initialise glad!");
+
+		FLC_CORE_INFO("OpenGL Info:");
+		FLC_CORE_INFO("Vendor: {0}", glGetString(GL_VENDOR));
+		FLC_CORE_INFO("Renderer: {0}", glGetString(GL_RENDERER));
+		FLC_CORE_INFO("Version: {0}", glGetString(GL_VERSION));
 	}
 
 	void OpenGLContext::SwapBuffers()
